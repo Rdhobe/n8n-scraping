@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: flask-scraper
+    env: docker
+    plan: free
+    region: singapore
+    dockerContext: .
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
